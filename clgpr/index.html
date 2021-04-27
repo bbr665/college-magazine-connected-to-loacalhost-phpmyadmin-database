@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	body{
+		background-image:  url(bg.jpg);
+		background-size: cover;
+		background-position: right;
+		background-attachment: fixed;
+
+	}
+	#ui{
+		background-color: #333;
+		padding: 45px;
+		margin-top: 60px;
+		border-radius: 15px;
+		opacity: 0.8;
+  		}
+
+  	#ui label,h1{
+  		color: #fff;
+
+
+  	}
+
+    #ui,option{
+       position: center;
+
+    }	
+</style>
+
+</head>
+<body>
+  <div class="container">
+  	
+  	<div class="row">
+  		
+  		<div class="col-lg-3"></div>
+  		<div class="col-lg-6">
+  			<div id="ui">
+  				
+             <h1 class="text-center">REGISTRATION FORM</h1>
+  				<form action="connect.php" method="post" class="form-group text-center">
+  					
+  					<div class="row ">
+  						<div class="col-lg-6">
+  							<label>First Name:</label>
+  							<input type="text"  class="form-control" placeholder="Enter your First name... " name="firstName" required="">
+  						</div>
+
+  						<div class="col-lg-6">
+  							<label>Last Name:</label>
+  							<input type="text"  class="form-control" placeholder="Enter your Last name.." name="lastName" required="">
+  							<br>
+
+  					</div>
+  					<label>REGISTER NO:</label>
+  					<input type="text"  class="form-group" id="number" placeholder="username....." name="regno" required="">
+  						<br>
+
+  					<label>E-mail</label>
+  					<input type="email"  class="form-control" placeholder="Enter your E-mail....." name="email" required="">
+  						<br>
+  					<div class="row">
+  						<div class="col-lg-6">
+  							<label>Password:</label>
+  							<input type="password"  class="form-control" placeholder="Enter  new password......." name="password" required="">
+  						</div>
+
+  						<div class="col-lg-6">
+  							<label>Re-type password:</label>
+  							<input type="password"  class="form-control" placeholder="Re-type password...." required="">
+  							<br>
+
+  					</div>
+
+  					    <select name="gender" class="form-control" required="">
+  						    <option >Choose Gender...</option>
+  						  	<option value="m">Male</option>
+  							<option value="f">Female</option>
+  							<option value="o">other</option>
+  						</select>
+  						<br>
+              
+
+                	<input type="submit" name="submit" value="submit" class="btn btn-primary btn-block btn-lg" >
+  							<br>
+  							<a href="login.html">Login?</a>
+  				</form>
+  			</div>
+
+  		</div>
+  		<div class="col-lg-3"></div>
+  		<div class="col-lg-3"></div>
+  		<div class="col-lg-3"></div>
+  		<div class="col-lg-3"></div>
+  		<div class="col-lg-3"></div>
+
+  	</div>
+  	
+  </div>
+</body>
+</html>
